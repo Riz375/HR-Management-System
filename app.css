@@ -19,3 +19,112 @@
 .box4 {background-color:#ff4757 ;}
 .box5 {background-color: #f1c40f;}
 
+h1{font-family: "Verdana", sans-serif;}
+h2{font-family: "Verdana", sans-serif; text-align:center;}
+	*{font-family: "Verdana", sans-serif;}
+	/* As the font is sans-serif it is easier for the user to read*/
+body {
+background-color: #5CB2F2;
+}
+    .imgMid{
+	width: 50%;
+    border: 5px solid black;
+    margin-right: 25%; 
+	margin-left: 25%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	}
+/* i have used a linear-gradient for the background of the title to make it stand out and look more aesthetic */
+    #Title {
+	font-family: "Verdana", sans-serif;
+	text-align: center;
+	border: 5px solid black;
+    padding: 15px;
+    margin: 10px;
+	background-image: linear-gradient(White, #5CB2F2, white); 
+	}
+	/* Welcome box has a border and a white background to allow the text to contrast with the page
+       allowing the user to read the text more easily and this allows the site to look more sleek */
+     .introBox{
+	 clear: both;
+	margin: 1% ;
+	 text-align: center;
+	font-family: "Verdana", sans-serif;
+    border: 5px solid black;
+    padding: 15px;
+	background-color: white;
+	 }
+	 
+img{
+width: 100% ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  background-image: linear-gradient(White, #5CB2F2, white);
+}
+
+li a {
+	font-family: "Verdana", sans-serif;
+  display: block;
+  color: #111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 3px solid black;
+  
+}
+/* when the user is hovering over pages in the navigation list it changes colour*/
+li a:hover:not(.active) {
+	background-color: white;
+} 
+/* Depending on what page the user is on it is highlighted in the navigation list */
+.active {
+  background-color: white;
+  background-image: linear-gradient(#5CB2F2, White, white ,white, #5CB2F2);
+}
+
+
+table, th, td {
+font-family: "Verdana", sans-serif;
+ border:2px solid black;
+ border-collapse: collapse;
+}
+th, td {
+font-family: "Verdana", sans-serif;
+  padding: 5px;
+}
+th {
+	font-family: "Verdana", sans-serif;
+  text-align: left;
+}
+
+table#tblAlbum tr:nth-child(even) {
+  background-color: #eee;
+}
+table#tblAlbum tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+Table#stdTbl {
+	background-color: white;
+}
+  * {
+  box-sizing: border-box;
+}
+#userInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
