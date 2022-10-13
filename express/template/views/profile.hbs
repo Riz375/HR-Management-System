@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Adding a favicon-->
+    <link rel="shortcut icon" href="//skills-cityportal.com/pluginfile.php/1/theme_tltitan/favicon/1655987184/in4-circle-logo-100x100.png" />
+    <!-- Adding icon library -->
+    <script src="https://kit.fontawesome.com/98a48b4441.js" crossorigin="anonymous"></script>
+    {{>navbar}}
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+     <h1 id="page-title">Profile</h1>
+
+<div class="page-content">
+
+    <div class="dBoxes">
+        <h2>Personal</h2>
+        <div class="roles-box"> 
+            <p>Full Name: John Smith </p>
+            <p>Age: 22 </p>
+            <p>contact number: 01234 567890 </p>
+        </div>
+    </div>
+    <div class="dBoxes">
+        <h2>Proffessional</h2>
+        <div class="roles-box">
+            {{!-- <p class="role-weight" >Personal</p> --}}
+            <p>Department: Sales </p>
+            <p>Job Title: Sales Manager </p>
+            <p>Employee ID: 101606 </p>
+            <p>Manager ID: 249871 </p>
+            
+        </div>
+    </div>
+    <div class="dBoxes">
+        <h2>Qualifications</h2>
+        <div class="roles-box">
+            {{!-- <p class="role-weight" >Personal</p> --}}
+            <p>Current Qualification: </p>
+            <select name="curQual">
+                <option disabled>AWS Cloud Practitioner</option>
+                <option disabled>AWS Developer Associate</option>
+                <option disabled>AWS Solutions Architect</option>
+                <option disabled>Microsoft Cybersecurity Architect</option>
+                <option disabled selected>Project Management</option>
+            </select>
+            <br>
+            <p>Qualifications completed: </p>
+             <select>
+                <option>AWS Cloud Practitioner</option>
+                <option>AWS Developer Associate</option>
+                <option>AWS Solutions Architect</option>
+                <option selected>Microsoft Cybersecurity Architect</option>
+                <option>Project Management</option>
+            </select>
+        </div>
+    </div>  
+</div>
+
+
+
+
+
+
+
+    {{>footer}}
+    
+</body>
+</html>

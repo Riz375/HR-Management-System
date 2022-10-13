@@ -24,6 +24,9 @@ hbs.registerPartials(partialsPath);
 app.get('/', (req, ress) => {
     ress.render('index');
 })
+app.get('/profile', (req, ress) =>{
+    ress.render('profile')
+})
 app.get('/login', (req, ress) =>{
     ress.render('login')
 })
