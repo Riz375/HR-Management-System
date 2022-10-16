@@ -3,15 +3,16 @@ import {useState} from 'react'
 // import { useNavigate } from "react-router-dom"
 
 
-const Login = () =>{
+const Login = ({updateUser}) =>{
 
     // const navigate = useNavigate()
+   
 
     const[username, setUsername] = useState();
     const[password, setPassword] = useState();
+
         
-      
-         const addUser = async(e)=>{
+     const addUser = async(e)=>{
             e.preventDefault();
             console.log(username, password);
 
@@ -21,16 +22,52 @@ const Login = () =>{
                 headers: { 'Content-Type': 'application/json'}
             });
         
-            result=await result.json().then( res =>{
-                console.log(result)   
-            alert("login successful") 
-            // setLoginUser(res.data.user)
-            // navigate("/")
-            // history.push("/")  
+            result=await result.json()
+            console.log(result)
+            // alert('Login succsessful')
 
-            })
+            // 30min31s
+            if(result.user){
+                localStorage.setItem('token', result.user)
+                // updateUser(res.res)
+                alert('Login successful')
+                window.location.href='/home'
+                // updateUser(result.user)
+            } else{
+                alert('Please check your username and password')
+            }
             
-            }  
+        }
+
+        //  const addUser = async(e)=>{
+        //     e.preventDefault();
+        //     console.log(username, password);
+
+        //     let result = await fetch("http://localhost:4000/loginpage", {
+        //         method: 'POST',
+        //         body: JSON.stringify({username, password}),
+        //         headers: { 'Content-Type': 'application/json'}
+        //     });
+        
+        //     result=await result.json()
+        //     console.log(result)
+        //     // alert('Login succsessful')
+
+        //     // 30min31s
+        //     if(result.user){
+        //         localStorage.setItem('token', result.user)
+        //         // updateUser(res.res)
+        //         alert('Login successful')
+        //         window.location.href='/new'
+        //         // updateUser(res.result.user)
+
+        //         // window.location.href = '/new'
+        //     } else{
+        //         alert('Please check your username and password')
+        //     }
+            
+            
+        //     }  
 
          
 
