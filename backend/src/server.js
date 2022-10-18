@@ -25,11 +25,7 @@ app.get('/loginpage', (req,res)=>{
 // API to retrieve user login data from database
 app.post('/loginpage', async(req, res) => {
     const {username, password} = req.body
-    // const username = req.body.username 
-    // const password = req.body.password
     console.log(req.body)
-
-
 
     const user = await EmployeeDetails.findOne(({username:username}));
 
@@ -45,6 +41,8 @@ app.post('/loginpage', async(req, res) => {
         
             }
 })
+
+
 
 // app.post('/logout')
 
