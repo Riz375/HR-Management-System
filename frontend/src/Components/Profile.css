@@ -1,0 +1,35 @@
+
+
+body{
+    /* position: relative;
+    min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    /* margin:0; */
+}
+
+.allBoxes{
+    /* margin: 50px 60px; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left:80px;
+
+}
+
+
+.dBoxes {
+    background-color:hsl(255, 59%, 57%);
+    border: 1px solid #5C4891 hsla(256, 45%, 40%, 0.833);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width:300px;
+    height:500px;
+    margin: 20px 10px;    
+}

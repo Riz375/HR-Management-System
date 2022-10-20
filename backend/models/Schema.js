@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 
 const EmployeeData = mongoose.Schema({
     username:{ type:String, required:true},
-    password: {type:String, required:true},
+    password: {type:String, required:true, mainLength:5},
 
   
 })
