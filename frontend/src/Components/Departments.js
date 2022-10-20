@@ -4,7 +4,7 @@ function departments () {
     return (
         <div class="page-content">
     
-
+<div className="allBoxes">
     <div class="dBoxes">
         <h2>Events</h2>
         <div class="roles-box">
@@ -113,7 +113,7 @@ function departments () {
         <p>Employees: 1</p>
         </div>
     </div>
-
+    </div>
 
     
 </div>

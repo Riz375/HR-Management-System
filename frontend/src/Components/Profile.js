@@ -1,9 +1,12 @@
+import './Profile.css';
+import React from 'react';
 
 function Profile() {
 
     return (
         <div>
             <div class="page-content">
+                <div class="allBoxes">
 
                 <div class="dBoxes">
                     <h2>Personal</h2>
@@ -45,6 +48,7 @@ function Profile() {
                             <option>Project Management</option>
                         </select>
                     </div>
+                </div>
                 </div>
             </div >
         </div >

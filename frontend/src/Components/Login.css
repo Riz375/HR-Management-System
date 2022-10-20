@@ -40,8 +40,8 @@ section{
 }
 .container-form{
     position:absolute;
-    top: 35%;
-    left: 71%;
+    top: 25%;
+    left: 70%;
     width: 300px;
     /* padding:50px 10px; */
     
@@ -81,13 +81,26 @@ h1{
 
 .reset-link{
     text-align: center;
+    font-size: 15px;
 }
 
 .reset-link a{
     text-decoration: none;
     color:#000;
+
 }
 
-.reset-link a:hover{
+.container-form h1:hover{
     color:hsl(255, 77%, 59%);
 }
+
+
+.invalidInput{
+    border: 1px solid red;
+    position:relative;
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: hsla(0, 96%, 51%, 0.1);
+}
+

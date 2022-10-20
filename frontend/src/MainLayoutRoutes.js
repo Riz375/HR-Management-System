@@ -22,7 +22,7 @@ function MainRoutes() {
         
        
         <Routes>
-        {/* <Route exact path='/' element={<Login />} /> */}
+      
   <Route exact path='/home' element={<HomePage />} />
   <Route exact path='/profile' element={<Profile />} />
   <Route exact path='/departments' element={<Departments />} />
