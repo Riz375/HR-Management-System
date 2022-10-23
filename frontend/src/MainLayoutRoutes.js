@@ -2,7 +2,6 @@ import React from 'react';
 import {Routes,Route} from "react-router-dom";
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer'
-// import Login from './Components/Login';
 import HomePage from './Components/HomePage';
 import Departments from './Components/Departments';
 import Profile from './Components/Profile';
@@ -10,6 +9,7 @@ import Employees from './Components/Employees';
 import Qualifications from './Components/Qualifications';
 
 
+//  To display header and footer on all pages except login page
 function MainRoutes() {
     return(
         
@@ -17,9 +17,6 @@ function MainRoutes() {
             <nav>
             <NavBar />
             </nav>
-       
-
-        
        
         <Routes>
       

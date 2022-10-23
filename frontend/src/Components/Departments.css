@@ -1,6 +1,5 @@
-/*                          PAGE CONTENT                 */
 
-/* Styling page title */
+
 #page-title {
     text-align: center;
     font-size: 60px;
@@ -9,20 +8,17 @@
 
 
 body{
-    /* position: relative;
-    min-height: 100vh; */
     display: flex;
     flex-direction: column;
     position: relative;
     min-height: 100%;
-    /* margin:0; */
+    
 }
+
 
 /* Page layout */
 
-
 .allBoxes{
-    /* margin: 50px 60px; */
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,8 +30,6 @@ body{
 }
 
 
-
-/* to do: edit border */
 .dBoxes {
     background-color:hsl(255, 59%, 57%);
     border: 1px solid #5C4891 hsla(256, 45%, 40%, 0.833);
@@ -46,8 +40,6 @@ body{
     height:500px;
     margin: 20px 10px;    
 }
-
-
 
 .roles-box {
     border:10px solid #5C4891 hsla(256, 50%, 30%, 0.36);
@@ -60,8 +52,6 @@ body{
 }
 
 
-
-/* Styling department roles to be bold */
 .role-weight {
     font-weight: bolder;
     font-size: 18px;
@@ -77,42 +67,3 @@ h2 {
     font-weight: 1000px;
     font-size:25px;
 }
-
-
-/* .footer{
-    background-image: linear-gradient(270deg, hsla(256, 45%, 40%, 0.833), hsla(255, 92%, 38%, 0.96));
-    color:#FFF;
-  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top:100px;
-}
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-.footer-content h3 {
-    font-size: 25px;
-    margin: 10px;
-}
-
-.socials-list {
-    list-style: none;
-    display:flex;
-    justify-content: center;
-    gap: 10px;
-    margin-right: 60px;
-    margin-top:5px;
-    margin-bottom: 5px; 
-    
-    
-}
-
-
-.footer-content p {
-    margin-right: 20px;
-    
-} */

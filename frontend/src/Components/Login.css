@@ -42,11 +42,7 @@ section{
     position:absolute;
     top: 25%;
     left: 70%;
-    width: 300px;
-    /* padding:50px 10px; */
-    
-    
-
+    width: 300px;    
 }
 
 h1{
@@ -57,11 +53,8 @@ h1{
 
 .info input{
     width:100%;
-    /* display:block; */
     padding:10px;
     margin: 1em 0;
-    /* border:none; */
-    /* outline: none; */
     
 }
 
@@ -72,8 +65,7 @@ h1{
     font-size: 1em;
     opacity: .9;
 }
-/* border:none removes border around login */
-/* hex #6E45E6; */
+
 
 .info input[type="submit"]:hover{
     opacity: 1;
@@ -93,7 +85,6 @@ h1{
 .container-form h1:hover{
     color:hsl(255, 77%, 59%);
 }
-
 
 .invalidInput{
     border: 1px solid red;

@@ -7,12 +7,8 @@ const EmployeeDetails = require('../models/Schema');
 const jwt = require('jsonwebtoken');
 
 
-// need to use for code to work
 app.use(express.json());
 app.use(cors());
-
-
-
 
 
 // API to get login page
@@ -27,7 +23,7 @@ app.post('/loginpage', async(req, res) => {
     const {username, password} = req.body
     console.log(req.body)
 
-    const user = await EmployeeDetails.findOne(({username:username}));
+    const user = await EmployeeDetails.findOne(({username:username, password:password}));
 
     if(user){
         const token = jwt.sign(
@@ -41,12 +37,6 @@ app.post('/loginpage', async(req, res) => {
         
             }
 })
-
-
-
-// app.post('/logout')
-
-
 
 
 app.listen(4000, ()=>
