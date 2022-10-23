@@ -6,13 +6,6 @@ body {
 }
 
 
-
-/*                       NAVIGATION BAR                     */
-
-
-
-
-/* Styling/layout of header */
 header {
     display:flex;
     align-items: center;
@@ -22,8 +15,6 @@ header {
 }
 
 
-
-/* Making navigation links side-by-side */
 .nav-links li {
     display:inline-block;
     padding: 0 10px;
@@ -31,7 +22,6 @@ header {
   
 }
 
-/* Styling the logo */
  .nav-logo{
     max-height: 50px;
     max-width:50px;
@@ -39,7 +29,7 @@ header {
     cursor:pointer;
 }
 
-/* Removing underline from navigation links and styling */
+
 li, a{
     text-decoration: none;
     color:#FFF; 

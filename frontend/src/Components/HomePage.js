@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import jwtDecode from 'jwt-decode';
 import './HomePage.css';
-import './Profile';
 
 
 const Homepage = () =>{
@@ -11,9 +10,8 @@ const Homepage = () =>{
 
     const navigate = useNavigate()
 
-    // hook to verify is user is logged in
+    // Hook to verify is user is logged in
     useEffect(() => {
-        // const navigate = useNavigate()
 
         const token = localStorage.getItem('token')
 
@@ -28,12 +26,7 @@ const Homepage = () =>{
     }, [])
 
     
-        
-        
-                
-    
-    
-    
+         
 
     return(
         <div className="pageContainer">
@@ -50,9 +43,6 @@ const Homepage = () =>{
                 </div>
 
             </div>
-
-        
-        
 
        
             <div className="newsArticles">
@@ -72,13 +62,6 @@ const Homepage = () =>{
             </div>
 
            
-
-
-
-
-
-
-
 
 
         </div>
